@@ -1,8 +1,8 @@
 import logotype from '../image/logoo.png';
 import { PersonCircle } from 'react-bootstrap-icons';
-    function Header(){
-    return( 
-    <header className="header">
+function Header(){
+    return(
+        <header className="header">
             <>
                 <a href="/" className="logo-link">
                     <img src={logotype}
@@ -11,8 +11,9 @@ import { PersonCircle } from 'react-bootstrap-icons';
                     />
                 </a>
             </>
-            <div>
-                <button className='information-about'>
+            <div> 
+                <button className='information'>
+
                     <p>Информация о сайте</p>
                 </button>
                 <button className='information'>
