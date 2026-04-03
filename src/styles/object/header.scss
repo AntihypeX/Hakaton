@@ -1,49 +1,7 @@
 @use './hakaton_vars.scss';
 
 header{
-  //стили
-  background-color: var(--bg-color);
-  color: var(--text-color);
-
-  a {
-    //стили
-
-    &:hover {
-      //стили
-      color: var(--accent-color);
-    }
-
-    img{
-      //стили
-    }
-  }
-
-  div{
-    //стили
-
-    button{
-      //стили
-
-      &:hover {
-        //стили
-      }
-
-      p{
-        //стили
-      }
-    }
-  }
-}
-
-div{
-  //стили
-
-  button{
-    //стили
-
-    &:hover {
-      //стили
-    } 
-
-  }
+  background-color: $blue;
+  color: $white;
+  display: flex;
 }
