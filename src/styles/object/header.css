@@ -22,14 +22,22 @@ header div button {
   border: none;
   color: inherit;
   outline: none;
-  color: white;
+  color: #EFF2F7;
   padding: 0;
   margin: 0;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 header div button p {
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
+}
+header .profile-button {
+  background-color: #FF6B35;
+  margin: 0;
+  padding: 2rem;
+  color: #2C3E50;
+  border-radius: 50px;
+  font-size: 20px;
 }/*# sourceMappingURL=header.css.map */
