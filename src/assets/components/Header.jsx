@@ -1,21 +1,34 @@
-import logotype from '../components/image/logoo.png';
-function Header(){
-
-    return(
-        <header className="header">
+import logotype from '../image/logoo.png';
+import { PersonCircle } from 'react-bootstrap-icons';
+    function Header(){
+    return( 
+    <header className="header">
             <>
                 <a href="/" className="logo-link">
                     <img src={logotype}
-                        alt=""
+                        alt="hakaton"
                         className="logo-images"
                     />
                 </a>
             </>
-            <div> 
+            <div>
                 <button className='information-about'>
                     <p>Информация о сайте</p>
                 </button>
+                <button className='information'>
+                    <p>О нас</p>
+                </button>
+                <button className='information'>
+                    <p>Помощь</p>
+                </button>
             </div>
+            <>
+                <div className='userProfile'>
+                    <button className="profile-button">
+                        <PersonCircle size={40}/>
+                    </button>
+                </div>
+            </>
         </header>
     )
 }

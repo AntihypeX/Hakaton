@@ -1,72 +1,49 @@
-@use './vars.scss' as *;
+@use './hakaton_vars.scss';
 
-nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: flex;
-  width: 100vw;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  box-sizing: border-box;
+header{
+  //стили
+  background-color: var(--bg-color);
   color: var(--text-color);
-  background-color: var(--bg-glass);
-  border-bottom: 10px solid var(--borderborder-color);
-  z-index: 1000;
-  padding: 1vw 5vw;
 
   a {
-    display: flex;
-    color: $white;
-    text-decoration: none;
-    font-size: 2vw;
-    margin-left: 2vw;
-    transition: all $transition-speed;
+    //стили
 
     &:hover {
-      color: $accent-blue;
+      //стили
+      color: var(--accent-color);
+    }
+
+    img{
+      //стили
     }
   }
 
-  navimg {
-    padding: 0;
-    margin-left: 2vw;
-    align-items: center;
-  }
+  div{
+    //стили
 
-  img {
-    width: 4vw;
-    cursor: pointer;
-  }
-}
+    button{
+      //стили
 
-.NAVlogo {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  padding: 0;
-  color: $accent-blue;
-  font-size: 2vw;
+      &:hover {
+        //стили
+      }
 
-  h1 {
-    margin: 0 0 0 1vw;
+      p{
+        //стили
+      }
+    }
   }
 }
 
-.NAVnav {
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
+div{
+  //стили
 
-.logo1 {
-  width: 5vw;
-}
+  button{
+    //стили
 
-.open-btn {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
+    &:hover {
+      //стили
+    } 
+
+  }
 }

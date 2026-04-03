@@ -1,1 +1,1 @@
-{"version":3,"sources":["hakaton_vars.scss","hakaton_vars.css"],"names":[],"mappings":"AAUA;EACI,mBAAA;EACA,qBAAA;EACA,uBAAA;EACA,kBAAA;EACA,uBAAA;EACA,8CAAA;EACA,kCAAA;EACA,0CAAA;EACA,mDAAA;ACTJ;;ADYA;EACI,mBAAA;EACA,qBAAA;EACA,uBAAA;EACA,kBAAA;EACA,uBAAA;EACA,8CAAA;EACA,kCAAA;EACA,+CAAA;EACA,oCAAA;ACTJ","file":"hakaton_vars.css"}
+{"version":3,"sources":["hakaton_vars.scss","hakaton_vars.css"],"names":[],"mappings":"AAMA;EACI,mBAAA;EACA,qBAAA;EACA,uBAAA;EACA,uBAAA;EACA,mCAAA;ACLJ","file":"hakaton_vars.css"}
