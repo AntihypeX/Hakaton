@@ -1,5 +1,5 @@
 import logotype from '../image/logoo.png';
-import { PersonCircle } from 'react-bootstrap-icons';
+import '../../styles/glav.css';
 function Header(){
 
     return(
@@ -26,7 +26,7 @@ function Header(){
             <>
                 <div className='userProfile'>
                     <button className="profile-button">
-                        <PersonCircle size={40}/>
+                        Вход
                     </button>
                 </div>
             </>
