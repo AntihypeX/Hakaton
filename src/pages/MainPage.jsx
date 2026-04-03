@@ -1,4 +1,5 @@
 import Header from '../assets/components/Header.jsx';
+import  '../styles/glav.css';
 
 function MainPage(){
     return(
