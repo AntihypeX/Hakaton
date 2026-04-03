@@ -1,4 +1,4 @@
-import Header from '../assets/components/Header.jsx';
+import Header from '../assets/components/Header.tsx';
 
 function MainPage(){
     return(
