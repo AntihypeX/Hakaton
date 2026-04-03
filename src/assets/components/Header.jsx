@@ -1,6 +1,7 @@
 import logotype from '../image/logoo.png';
 import { PersonCircle } from 'react-bootstrap-icons';
 function Header(){
+
     return(
         <header className="header">
             <>
@@ -13,7 +14,6 @@ function Header(){
             </>
             <div> 
                 <button className='information'>
-
                     <p>Информация о сайте</p>
                 </button>
                 <button className='information'>
