@@ -4,4 +4,35 @@ header{
   background-color: $blue;
   color: $white;
   display: flex;
+
+  }
+
+  div{
+    //стили
+
+    button{
+      //стили
+
+      &:hover {
+        //стили
+      }
+
+      p{
+        //стили
+      }
+    }
+  }
+}
+
+div{
+  //стили
+
+  button{
+    //стили
+
+    &:hover {
+      //стили
+    } 
+
+  }
 }
