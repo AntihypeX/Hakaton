@@ -3,6 +3,7 @@ import Footer from '../assets/components/Footer.jsx';
 import SloganBlock from '../assets/components/SloganBlock.jsx';
 import WhyUs from '../assets/components/WhyUs.jsx';
 import ReviewsBlock from '../assets/components/Reviews.jsx';
+import AnyQuestions from '../assets/components/AnyQuestions.jsx';
 import  '../styles/glav.css';
 import '../data/reviews.js';
 function MainPage(){
@@ -13,6 +14,7 @@ function MainPage(){
                    <SloganBlock /> 
                    <WhyUs title="Почему именно мы?" />
                    <ReviewsBlock title="Отзывы" />
+                   <AnyQuestions title="Остались вопросы?" />
                 </main>
             <Footer />
         </div>
