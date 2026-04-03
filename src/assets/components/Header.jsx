@@ -1,4 +1,5 @@
 import logotype from '../image/logoo.png';
+import  '../../styles/glav.css';
 import '../../styles/glav.css';
 function Header(){
 

@@ -1,2 +1,5 @@
-@use '../styles/object/hakaton_vars.scss' as *;
 @use '../styles/object/header.scss';
+
+body{
+    margin: 0;
+}

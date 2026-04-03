@@ -1,15 +1,35 @@
-:root {
-  --bg-color: #ff0000;
-  --text-color: #0080ff;
-  --accent-color: #00ff2a;
-  --border-color: #ff00aa;
-  --shadow: 0 0 50px rgb(0, 247, 255);
-}
-
 header {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2C3E50;
+  padding: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin: 0;
 }
-header a:hover {
-  color: var(--accent-color);
+header img {
+  height: 82px;
+}
+header div {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+header div button {
+  background: none;
+  border: none;
+  color: inherit;
+  outline: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+header div button p {
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0;
 }/*# sourceMappingURL=header.css.map */
