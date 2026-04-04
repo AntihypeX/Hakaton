@@ -74,3 +74,190 @@ header{
     }
   }
 }
+
+
+.modal-login-container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.75);
+
+    .modal-login-container-items{
+        width: 40vw;
+        height: auto;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #1B283B;
+        gap: 30px;
+        border-radius: 50px;
+        background-color: #1B283B;
+        justify-content: space-between;
+
+        h2{
+          margin: 0;
+          color: #EFF2F7;
+          font-size: 40px;
+        }
+        
+        .modal-login-form{
+          display: flex;
+          width: 100%;
+
+            .login-form{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+
+              input{
+                width: 80%;
+                background-color: #DEEAFE;
+                padding: 25px;
+                border-radius: 25px;
+                margin-bottom: 0.9rem;
+                font-size: 24px;
+                margin-bottom: 20px;
+              }
+
+              p{
+                color: #EFF2F7;
+                font-size: 24px;
+                margin: 0;
+              }
+
+              span{
+                color: #FF6B35;
+                font-size: 24px;
+                margin: 0;
+              }
+
+              .btn-log{
+                background-color: #DEEAFE;
+                padding: 25px;
+                resize: none;
+                border-radius: 25px;
+                border: none;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 1.5rem;
+                cursor: pointer;
+                transition: all 0.5s ease;
+                margin-bottom: 20px;
+
+                &:hover {
+                    scale: 1.05;
+                    background-color: #FF6B35;
+                }
+              }
+            }
+        }
+    }
+}
+
+.close-btn-log{
+  color: #DEEAFE;
+  font-size: 24px;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    scale: 1.05;
+    color: #FF6B35;
+  }
+}
+
+.modal-registr-container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.75);
+
+    .modal-registr-container-items{
+        width: 40vw;
+        height: auto;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #1B283B;
+        gap: 30px;
+        border-radius: 50px;
+        background-color: #1B283B;
+        justify-content: space-between;
+
+        h2{
+          margin: 0;
+          color: #EFF2F7;
+          font-size: 40px;
+        }
+        
+        .modal-regisre-form{
+          display: flex;
+          width: 100%;
+
+            .registr-form{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+
+              input{
+                width: 80%;
+                background-color: #DEEAFE;
+                padding: 25px;
+                border-radius: 25px;
+                margin-bottom: 0.9rem;
+                font-size: 24px;
+                margin-bottom: 20px;
+              }
+
+              p{
+                color: #EFF2F7;
+                font-size: 24px;
+                margin: 0;
+              }
+
+              span{
+                color: #FF6B35;
+                font-size: 24px;
+                margin: 0;
+              }
+
+              .btn-log{
+                background-color: #DEEAFE;
+                padding: 25px;
+                resize: none;
+                border-radius: 25px;
+                border: none;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 1.5rem;
+                cursor: pointer;
+                transition: all 0.5s ease;
+                margin-bottom: 20px;
+
+                &:hover {
+                    scale: 1.05;
+                    background-color: #FF6B35;
+                }
+              }
+            }
+        }
+    }
+}

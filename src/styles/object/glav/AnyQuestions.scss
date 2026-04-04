@@ -30,6 +30,7 @@ $whblue: #076CFF;
         border-radius: 50px;
 
         .question-item{
+            cursor: pointer;
             width: auto;
             height: auto;
             color: #EFF2F7;
@@ -42,7 +43,12 @@ $whblue: #076CFF;
             background-color: #4A6FA5;
             margin: 1rem;
             border-radius: 25px;
-        
+            transition: all 0.5s ease;
+
+            &:hover {
+                background-color: #324b70;
+            }
+
             svg{
                 width: 35px;
                 height: 35px;
@@ -53,6 +59,7 @@ $whblue: #076CFF;
             }
             h3{
                 font-size: 1.5rem;
+                margin: 0;
                 margin-bottom: 0.5rem;
             }
         }

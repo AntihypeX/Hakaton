@@ -55,4 +55,172 @@ header .profile-button {
 header .profile-button:hover {
   scale: 1;
   background-color: #324b70;
+}
+
+.modal-login-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.modal-login-container .modal-login-container-items {
+  width: 40vw;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1B283B;
+  gap: 30px;
+  border-radius: 50px;
+  background-color: #1B283B;
+  justify-content: space-between;
+}
+.modal-login-container .modal-login-container-items h2 {
+  margin: 0;
+  color: #EFF2F7;
+  font-size: 40px;
+}
+.modal-login-container .modal-login-container-items .modal-login-form {
+  display: flex;
+  width: 100%;
+}
+.modal-login-container .modal-login-container-items .modal-login-form .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.modal-login-container .modal-login-container-items .modal-login-form .login-form input {
+  width: 80%;
+  background-color: #DEEAFE;
+  padding: 25px;
+  border-radius: 25px;
+  margin-bottom: 0.9rem;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.modal-login-container .modal-login-container-items .modal-login-form .login-form p {
+  color: #EFF2F7;
+  font-size: 24px;
+  margin: 0;
+}
+.modal-login-container .modal-login-container-items .modal-login-form .login-form span {
+  color: #FF6B35;
+  font-size: 24px;
+  margin: 0;
+}
+.modal-login-container .modal-login-container-items .modal-login-form .login-form .btn-log {
+  background-color: #DEEAFE;
+  padding: 25px;
+  resize: none;
+  border-radius: 25px;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-bottom: 20px;
+}
+.modal-login-container .modal-login-container-items .modal-login-form .login-form .btn-log:hover {
+  scale: 1.05;
+  background-color: #FF6B35;
+}
+
+.close-btn-log {
+  color: #DEEAFE;
+  font-size: 24px;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.close-btn-log:hover {
+  scale: 1.05;
+  color: #FF6B35;
+}
+
+.modal-registr-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.modal-registr-container .modal-registr-container-items {
+  width: 40vw;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1B283B;
+  gap: 30px;
+  border-radius: 50px;
+  background-color: #1B283B;
+  justify-content: space-between;
+}
+.modal-registr-container .modal-registr-container-items h2 {
+  margin: 0;
+  color: #EFF2F7;
+  font-size: 40px;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form {
+  display: flex;
+  width: 100%;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form .registr-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form .registr-form input {
+  width: 80%;
+  background-color: #DEEAFE;
+  padding: 25px;
+  border-radius: 25px;
+  margin-bottom: 0.9rem;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form .registr-form p {
+  color: #EFF2F7;
+  font-size: 24px;
+  margin: 0;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form .registr-form span {
+  color: #FF6B35;
+  font-size: 24px;
+  margin: 0;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form .registr-form .btn-log {
+  background-color: #DEEAFE;
+  padding: 25px;
+  resize: none;
+  border-radius: 25px;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-bottom: 20px;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form .registr-form .btn-log:hover {
+  scale: 1.05;
+  background-color: #FF6B35;
 }/*# sourceMappingURL=header.css.map */

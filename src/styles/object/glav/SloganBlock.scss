@@ -41,7 +41,7 @@ $whblue: #076CFF;
         border: none;
         border-radius: 25px;
         font-size: 1.75rem;
-        scale: 0.9;
+        scale: 1;
         cursor: pointer;
         transition: all 0.5s ease;
         display: flex;
@@ -50,8 +50,8 @@ $whblue: #076CFF;
         color: #2C3E50;
 
         &:hover {
-        scale: 1;
-        background-color: #FF6B35;
+            scale: 1.1;
+            background-color: #FF6B35;
         }        
     }
 }
