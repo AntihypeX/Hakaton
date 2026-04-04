@@ -122,6 +122,9 @@ $whblue: #076CFF;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.75);
 
     div{
         width: 50vw;
@@ -130,12 +133,12 @@ $whblue: #076CFF;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #EFF2F7;
+        background-color: #1B283B;
         gap: 30px;
         border-radius: 50px;
         
         h2{
-            color: #2C3E50;
+            color: #EFF2F7;
             font-weight: normal;
             margin: 0;
         }
@@ -160,7 +163,8 @@ $whblue: #076CFF;
                     border: none;
                     width: 100%;
                     height: 100%;
-                    padding: 1rem;
+                    padding: 1.5rem;
+                    font-size: 24px;
                 }
                 
             }
@@ -175,7 +179,7 @@ $whblue: #076CFF;
 
                 button{
                     background-color: #DEEAFE;
-                    padding: 2rem;
+                    padding: 25px;
                     resize: none;
                     border-radius: 25px;
                     border: none;

@@ -57,6 +57,174 @@ header .profile-button:hover {
   background-color: #324b70;
 }
 
+.modal-login-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.modal-login-container .modal-login-container-items {
+  width: 40vw;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1B283B;
+  gap: 30px;
+  border-radius: 50px;
+  background-color: #1B283B;
+  justify-content: space-between;
+}
+.modal-login-container .modal-login-container-items h2 {
+  margin: 0;
+  color: #EFF2F7;
+  font-size: 40px;
+}
+.modal-login-container .modal-login-container-items .modal-login-form {
+  display: flex;
+  width: 100%;
+}
+.modal-login-container .modal-login-container-items .modal-login-form .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.modal-login-container .modal-login-container-items .modal-login-form .login-form input {
+  width: 80%;
+  background-color: #DEEAFE;
+  padding: 25px;
+  border-radius: 25px;
+  margin-bottom: 0.9rem;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.modal-login-container .modal-login-container-items .modal-login-form .login-form p {
+  color: #EFF2F7;
+  font-size: 24px;
+  margin: 0;
+}
+.modal-login-container .modal-login-container-items .modal-login-form .login-form span {
+  color: #FF6B35;
+  font-size: 24px;
+  margin: 0;
+}
+.modal-login-container .modal-login-container-items .modal-login-form .login-form .btn-log {
+  background-color: #DEEAFE;
+  padding: 25px;
+  resize: none;
+  border-radius: 25px;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-bottom: 20px;
+}
+.modal-login-container .modal-login-container-items .modal-login-form .login-form .btn-log:hover {
+  scale: 1.05;
+  background-color: #FF6B35;
+}
+
+.close-btn-log {
+  color: #DEEAFE;
+  font-size: 24px;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.close-btn-log:hover {
+  scale: 1.05;
+  color: #FF6B35;
+}
+
+.modal-registr-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.modal-registr-container .modal-registr-container-items {
+  width: 40vw;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1B283B;
+  gap: 30px;
+  border-radius: 50px;
+  background-color: #1B283B;
+  justify-content: space-between;
+}
+.modal-registr-container .modal-registr-container-items h2 {
+  margin: 0;
+  color: #EFF2F7;
+  font-size: 40px;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form {
+  display: flex;
+  width: 100%;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form .registr-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form .registr-form input {
+  width: 80%;
+  background-color: #DEEAFE;
+  padding: 25px;
+  border-radius: 25px;
+  margin-bottom: 0.9rem;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form .registr-form p {
+  color: #EFF2F7;
+  font-size: 24px;
+  margin: 0;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form .registr-form span {
+  color: #FF6B35;
+  font-size: 24px;
+  margin: 0;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form .registr-form .btn-log {
+  background-color: #DEEAFE;
+  padding: 25px;
+  resize: none;
+  border-radius: 25px;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-bottom: 20px;
+}
+.modal-registr-container .modal-registr-container-items .modal-regisre-form .registr-form .btn-log:hover {
+  scale: 1.05;
+  background-color: #FF6B35;
+}
+
 footer {
   display: flex;
   align-content: center;
@@ -131,7 +299,7 @@ footer a img {
   border: none;
   border-radius: 25px;
   font-size: 1.75rem;
-  scale: 0.9;
+  scale: 1;
   cursor: pointer;
   transition: all 0.5s ease;
   display: flex;
@@ -140,7 +308,7 @@ footer a img {
   color: #2C3E50;
 }
 .main-block button:hover {
-  scale: 1;
+  scale: 1.1;
   background-color: #FF6B35;
 }
 
@@ -307,6 +475,9 @@ footer a img {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 .modal-review div {
   width: 50vw;
@@ -315,12 +486,12 @@ footer a img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #EFF2F7;
+  background-color: #1B283B;
   gap: 30px;
   border-radius: 50px;
 }
 .modal-review div h2 {
-  color: #2C3E50;
+  color: #EFF2F7;
   font-weight: normal;
   margin: 0;
 }
@@ -344,7 +515,8 @@ footer a img {
   border: none;
   width: 100%;
   height: 100%;
-  padding: 1rem;
+  padding: 1.5rem;
+  font-size: 24px;
 }
 .modal-review div form .button {
   display: flex;
@@ -356,7 +528,7 @@ footer a img {
 }
 .modal-review div form .button button {
   background-color: #DEEAFE;
-  padding: 2rem;
+  padding: 25px;
   resize: none;
   border-radius: 25px;
   border: none;
@@ -392,6 +564,7 @@ footer a img {
   border-radius: 50px;
 }
 .question-block .question-box .question-item {
+  cursor: pointer;
   width: auto;
   height: auto;
   color: #EFF2F7;
@@ -404,6 +577,10 @@ footer a img {
   background-color: #4A6FA5;
   margin: 1rem;
   border-radius: 25px;
+  transition: all 0.5s ease;
+}
+.question-block .question-box .question-item:hover {
+  background-color: #324b70;
 }
 .question-block .question-box .question-item svg {
   width: 35px;
@@ -415,6 +592,7 @@ footer a img {
 }
 .question-block .question-box .question-item h3 {
   font-size: 1.5rem;
+  margin: 0;
   margin-bottom: 0.5rem;
 }
 
