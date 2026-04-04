@@ -1,9 +1,8 @@
 import logotype from '../../image/logoo.png';
-import { useState } from "react";
+import { PersonCircle } from 'react-bootstrap-icons';
 import  '../../../styles/glav.css';
 import ModalLogIn from '../ModalWindows/ModalLogIn.jsx';
 function HeaderP(){
-    const [isModalOpen, setIsModalOpen] = useState(false);
     return(
         <header className="header">
             <>
@@ -17,13 +16,11 @@ function HeaderP(){
             <>
                 <div className='userProfile'>
                     <button className="profile-button">
-                       Войти
+                       <PersonCircle />
                     </button>
                 </div>
             </>
-            <ModalLogIn
-                isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)} />
+
         </header>
     )
 }
