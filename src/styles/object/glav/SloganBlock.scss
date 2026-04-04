@@ -7,14 +7,18 @@ $drblue: #2C3E50;
 $drblue: #1B283B;
 $whblue: #076CFF;
 
+
 .main-block{
-    background: linear-gradient(120deg,rgba(7, 108, 255, 1) 0%, rgba(255, 107, 53, 1) 100%);
+    background: linear-gradient(120deg, rgba(7, 108, 255, 0.75) 0%, rgba(255, 107, 53, 0.75) 100%), url(../assets/image/7dbff4604eeaf7a8edca4287cb773cda32bc018d.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 60vh;
     margin: 0;
     color: #EFF2F7;
     h1{
@@ -24,7 +28,7 @@ $whblue: #076CFF;
     }
     h2{
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         margin-bottom: 3rem;
     }
     button{
@@ -35,11 +39,15 @@ $whblue: #076CFF;
         padding-left: 6rem;
         padding-right: 6rem;
         border: none;
-        border-radius: 50px;
-        font-size: 20px;
+        border-radius: 25px;
+        font-size: 1.75rem;
         scale: 0.9;
         cursor: pointer;
         transition: all 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #2C3E50;
 
         &:hover {
         scale: 1;

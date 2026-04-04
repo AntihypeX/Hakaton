@@ -3,7 +3,7 @@ function WhyUs({title}){
         <main className="why-block" id='section1'>
             <div className="why-description">
                 <h2 className="why-title">{title}</h2>
-                <h3 className="why-description">Описание</h3>
+                <h3 className="why-description">Мы не просто сайт с вакансиями — мы ваш персональный навигатор в мире карьеры</h3>
             </div>   
             <div className="why-cards"> 
                 <div className="why-card">

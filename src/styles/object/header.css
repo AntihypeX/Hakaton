@@ -3,55 +3,56 @@ header {
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  background-color: #1B283B;
+  background-color: #2C3E50;
   padding: 1rem;
   padding-left: 5rem;
   padding-right: 5rem;
   margin: 0;
 }
 header img {
-  height: 82px;
+  height: 50px;
 }
 header div {
   display: flex;
   align-content: center;
   align-items: center;
 }
-header div button {
-  background: none;
-  border: none;
-  color: inherit;
-  outline: none;
-  color: #EFF2F7;
+header div a {
+  cursor: pointer;
+  font-size: 1.75rem;
+  margin: 0;
+  transition: all 0.5s ease;
   padding: 0;
   margin: 0;
   margin-left: 1rem;
   margin-right: 1rem;
+  color: #EFF2F7;
+  text-decoration: none;
 }
-header div button p {
-  cursor: pointer;
-  font-size: 20px;
-  margin: 0;
-  transition: all 0.5s ease;
-}
-header div button p:hover {
+header div a:hover {
   scale: 1.1;
   color: #FF6B35;
 }
 header .profile-button {
   background-color: #4A6FA5;
+  border: none;
   margin: 0;
   padding: 2rem;
   padding-left: 6rem;
   padding-right: 6rem;
   color: #EFF2F7;
-  border-radius: 50px;
+  border-radius: 25px;
   font-size: 20px;
   scale: 0.9;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   transition: all 0.5s ease;
+  font-size: 1.75rem;
 }
 header .profile-button:hover {
   scale: 1;
-  background-color: #FF6B35;
+  background-color: #324b70;
 }/*# sourceMappingURL=header.css.map */
