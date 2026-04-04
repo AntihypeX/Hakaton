@@ -1,7 +1,6 @@
-import logotype from '../image/logoo.png';
+import logotype from '../../image/logoo.png';
 import  '../../styles/glav.css';
-function Header(){
-
+function HeaderP(){
     return(
         <header className="header">
             <>
@@ -12,11 +11,6 @@ function Header(){
                     />
                 </a>
             </>
-            <div> 
-                <a href='#section1'>Информация о сайте</a>
-                <a href='#section2'>Отзывы</a>
-                <a href='#section3' >Помощь</a>
-            </div>
             <>
                 <div className='userProfile'>
                     <button className="profile-button">
@@ -27,4 +21,4 @@ function Header(){
         </header>
     )
 }
-export default Header;
+export default HeaderP;

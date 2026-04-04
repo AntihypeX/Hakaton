@@ -1,6 +1,6 @@
 function WhyUs({title}){
     return(
-        <main className="why-block">
+        <main className="why-block" id='section1'>
             <div className="why-description">
                 <h2 className="why-title">{title}</h2>
                 <h3 className="why-description">Описание</h3>

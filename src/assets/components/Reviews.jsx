@@ -3,7 +3,7 @@ import { rev } from '../../data/reviews.js'
 function ReviewsBlock({title}){
     const scrollRef = useRef(null)
     return(
-        <div className="review-container">
+        <div className="review-container" id = 'section2'>
             <h2 className="review-title">{title}</h2>
             <div className="rev-wrapper" ref={scrollRef}>
                 <ul className="revUl">

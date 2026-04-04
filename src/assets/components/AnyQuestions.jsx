@@ -7,18 +7,18 @@ const clickAccordion = (id) => {
         setActive(id === Active ? null : id);
         };
     return (
-        <div className="question-block">
+        <div className="question-block" id='section3'>
             <h2 className="question-title">{title}</h2>
                 <div className="question-box">
                     {faqs.map((faq) => (
                         <div key = {faq.id} className="question-item" onClick={() => clickAccordion(faq.id)}>
                             <h3 className="question-question">{faq.question}</h3>
                                 <AiOutlineDown 
-  style={{ 
-    transform: Active === faq.id ? 'rotate(180deg)' : 'rotate(0deg)',
-    transition: 'transform 0.3s ease' 
-  }} 
-/>
+                                    style={{ 
+                                        transform: Active === faq.id ? 'rotate(180deg)' : 'rotate(0deg)',
+                                        transition: 'transform 0.35s ease' 
+                                    }} 
+                                />
                             {Active === faq.id && (
                                 <p className="question-answer">{faq.answer}</p>
                             )}

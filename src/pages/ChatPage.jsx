@@ -1,11 +1,11 @@
-import Header from '../assets/components/Header.jsx';
+import HeaderP from '../assets/components/ChatP/HeaderP.jsx';
 import Footer from '../assets/components/Footer.jsx';
-import Chat from '../assets/components/Chat.jsx';
+import Chat from '../assets/components/ChatP/Chat.jsx';
 
 function ChatPage(){
     return(
         <div>
-            <Header />
+            <HeaderP />
             <Chat />
             <Footer />
         </div>
