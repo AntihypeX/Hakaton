@@ -1,0 +1,76 @@
+.review-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background: #4A6FA5;
+  background: linear-gradient(180deg, rgb(74, 111, 165) 0%, rgb(0, 0, 0) 100%);
+}
+.review-container h2 {
+  color: #EFF2F7;
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.review-container div {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.review-container div ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.review-container div ul li {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #EFF2F7;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 2rem;
+  border-radius: 25px;
+  width: 350px;
+  height: 350px;
+}
+.review-container div ul li .prof-pic {
+  align-items: center;
+  margin-bottom: 20px;
+}
+.review-container div ul li .prof-pic img {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+.review-container div ul li .prof-pic h4 {
+  color: #2C3E50;
+  padding: 0;
+  margin: 0;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+}
+.review-container div ul li .song-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 255px;
+}
+.review-container div ul li .song-info p {
+  color: #2C3E50;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+}
+.review-container div ul li .song-info h5 {
+  color: #2C3E50;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}/*# sourceMappingURL=Reviews.css.map */

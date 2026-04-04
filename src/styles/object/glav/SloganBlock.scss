@@ -7,6 +7,7 @@ $drblue: #2C3E50;
 $drblue: #1B283B;
 $whblue: #076CFF;
 
+
 .main-block{
     background: linear-gradient(120deg, rgba(7, 108, 255, 0.75) 0%, rgba(255, 107, 53, 0.75) 100%), url(../assets/image/7dbff4604eeaf7a8edca4287cb773cda32bc018d.png);
     background-repeat: no-repeat;
@@ -46,6 +47,7 @@ $whblue: #076CFF;
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #2C3E50;
 
         &:hover {
         scale: 1;

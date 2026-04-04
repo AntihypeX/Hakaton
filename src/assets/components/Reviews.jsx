@@ -11,9 +11,9 @@ function ReviewsBlock({title}){
                         <li key = {rev.id} className="rev-item">
                             <div className="prof-pic">
                                 <img src={rev.profpic} alt={rev.name} />
+                                <h4 className='user-name'>{rev.name}</h4>
                             </div>
                             <div className="song-info"> 
-                                <h4 className='user-name'>{rev.name}</h4>
                                 <p className='user-text'>{rev.text}</p>
                                 <h5 className='date-review'>{rev.date}</h5>
                             </div>
