@@ -4,16 +4,16 @@
   flex-direction: column;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 200px;
+  padding-right: 200px;
   background: #4A6FA5;
   background: linear-gradient(180deg, rgb(74, 111, 165) 0%, rgb(0, 0, 0) 100%);
 }
 .review-container h2 {
   color: #EFF2F7;
-  font-size: 2.5rem;
+  font-size: 40px;
   margin: 0;
-  margin-bottom: 2rem;
+  font-weight: normal;
 }
 .review-container div {
   display: flex;
@@ -37,7 +37,7 @@
   padding: 2rem;
   border-radius: 25px;
   width: 350px;
-  height: 350px;
+  height: 300px;
 }
 .review-container div ul li .prof-pic {
   align-items: center;
@@ -53,7 +53,7 @@
   padding: 0;
   margin: 0;
   margin-left: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 .review-container div ul li .song-info {
   display: flex;
@@ -67,25 +67,25 @@
   color: #2C3E50;
   padding: 0;
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 16px;
 }
 .review-container div ul li .song-info h5 {
   color: #2C3E50;
   padding: 0;
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 16px;
   margin-top: 2rem;
 }
 .review-container div .my-review-button {
   background-color: #EFF2F7;
   height: 82px;
   margin: 0;
-  padding: 2rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding: 20px;
+  padding-left: 75px;
+  padding-right: 75px;
+  font-size: 24px;
   border: none;
   border-radius: 25px;
-  font-size: 1.75rem;
   scale: 0.9;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -112,7 +112,7 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 .modal-review div {
-  width: 50vw;
+  width: 750px;
   height: 50vh;
   padding: 40px;
   display: flex;
@@ -137,16 +137,17 @@
 .modal-review div form .textarea {
   display: flex;
   height: 100%;
-  padding-top: 0;
-  margin: 0;
+  padding: 0;
+  margin: 20px;
+  margin-top: 0;
 }
 .modal-review div form .textarea textarea {
   background-color: #DEEAFE;
   resize: none;
   border-radius: 25px;
   border: none;
-  width: 100%;
-  height: 100%;
+  width: 690px;
+  height: 220px;
   padding: 1.5rem;
   font-size: 24px;
 }
@@ -160,12 +161,14 @@
 }
 .modal-review div form .button button {
   background-color: #DEEAFE;
-  padding: 25px;
+  padding: 20px;
+  padding-left: 75px;
+  padding-right: 75px;
+  font-size: 24px;
   resize: none;
   border-radius: 25px;
   border: none;
   width: 50%;
-  font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -216,4 +219,22 @@ svg {
   background: none;
   border: none;
   color: #EFF2F7;
+}
+
+.rev-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  padding: 0 20px;
+}
+
+.revUl {
+  display: flex;
+  gap: 25px;
+  padding: 20px 0;
+  list-style: none;
+  scroll-padding: 0 75px;
 }/*# sourceMappingURL=Reviews.css.map */

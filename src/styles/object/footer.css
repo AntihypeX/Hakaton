@@ -3,15 +3,15 @@ footer {
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  background-color: #2C3E50;
+  background-color: #1B283B;
   padding: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 200px;
+  padding-right: 200px;
   margin: 0;
   color: #EFF2F7;
 }
 footer h4 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: normal;
   margin-top: 0.5rem;
 }
@@ -26,14 +26,35 @@ footer a img {
 .right-side div {
   display: flex;
   flex-direction: column;
-  margin-left: 2rem;
   text-align: left;
+  margin-left: 2rem;
+  gap: 10px;
 }
-.right-side div h3 {
+.right-side div .footer-text {
   margin: 0;
+  font-size: 16px;
 }
-.right-side div div {
+.right-side div .footer-oferta {
   margin: 0;
-  max-width: 130px;
-  font-size: 15px;
+  width: 200px;
+}
+.right-side div .footer-contacts {
+  margin: 0;
+  width: 200px;
+}
+.right-side div a {
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.right-side div a:hover {
+  color: #FF6B35;
+  scale: 1.1;
+}
+.right-side div span {
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.right-side div span:hover {
+  color: #FF6B35;
+  scale: 1.1;
 }/*# sourceMappingURL=footer.css.map */

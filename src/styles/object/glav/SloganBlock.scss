@@ -15,32 +15,33 @@ $whblue: #076CFF;
     background-position: center;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 60vh;
+    padding-left: 200px;
+    padding-right: 200px;
     margin: 0;
     color: #EFF2F7;
     h1{
         margin: 0;
-        font-size: 3rem;
+        font-size: 39px;
         margin-bottom: 1rem;
     }
     h2{
         margin: 0;
-        font-size: 1.75rem;
+        font-size: 31px;
         margin-bottom: 3rem;
     }
     button{
         background-color: #EFF2F7;
-        height: 82px; 
+        width: auto;
         margin: 0;
-        padding: 2rem;
-        padding-left: 6rem;
-        padding-right: 6rem;
+        padding: 20px;
+        padding-left: 75px;
+        padding-right: 75px;
+        font-size: 24px;
         border: none;
         border-radius: 25px;
-        font-size: 1.75rem;
         scale: 1;
         cursor: pointer;
         transition: all 0.5s ease;

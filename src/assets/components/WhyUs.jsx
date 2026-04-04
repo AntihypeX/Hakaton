@@ -1,10 +1,7 @@
 function WhyUs({title}){
     return(
         <main className="why-block" id='section1'>
-            <div className="why-description">
-                <h2 className="why-title">{title}</h2>
-                <h3 className="why-description">Мы не просто сайт с вакансиями — мы ваш персональный навигатор в мире карьеры</h3>
-            </div>   
+            <h2 className="why-title">{title}</h2>
             <div className="why-cards"> 
                 <div className="why-card">
                     <h4 className="why-card-title">Интеллект на базе DeepSeek</h4>
@@ -27,7 +24,7 @@ function WhyUs({title}){
                     <p className="why-card-description">В отличие от консультаций с карьерными коучами, анализ доступен в любое время. Вы получаете детальный разбор и рекомендации в течение нескольких секунд после отправки запроса</p>
                 </div>
                 <div className="why-card">
-                    <h4 className="why-card-title">ЗаголКонфиденциальность и фокусовок</h4>
+                    <h4 className="why-card-title">Конфиденциальность</h4>
                     <p className="why-card-description">Ваши данные используются только для генерации персональных советов. Мы создаем безопасное пространство для рефлексии, где вы можете честно описать свои желания и страхи, чтобы получить максимально точный вектор развития</p>
                 </div>
             </div> 
