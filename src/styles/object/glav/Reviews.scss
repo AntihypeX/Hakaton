@@ -13,15 +13,15 @@ $whblue: #076CFF;
     flex-direction: column;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 200px;
+    padding-right: 200px;
     background: #4A6FA5;
     background: linear-gradient(180deg,rgba(74, 111, 165, 1) 0%, rgba(0, 0, 0, 1) 100%);
     h2{
         color: #EFF2F7;
-        font-size: 2.5rem;
+        font-size: 40px;
         margin: 0;
-        margin-bottom: 2rem;
+        font-weight: normal;
     }
     div{
         display: flex;
@@ -45,7 +45,7 @@ $whblue: #076CFF;
                 padding: 2rem;
                 border-radius: 25px;
                 width: 350px;
-                height: 350px;
+                height: 300px;
 
                 .prof-pic{
                     align-items: center;
@@ -61,7 +61,7 @@ $whblue: #076CFF;
                         padding: 0;
                         margin: 0;
                         margin-left: 1.5rem;
-                        font-size: 1.5rem;
+                        font-size: 20px;
                     }
                 }
                 .song-info{
@@ -75,13 +75,13 @@ $whblue: #076CFF;
                         color: #2C3E50;
                         padding: 0;
                         margin: 0;
-                        font-size: 1.25rem;
+                        font-size: 16px;
                     }
                     h5{
                         color: #2C3E50;
                         padding: 0;
                         margin: 0;
-                        font-size: 1.25rem;
+                        font-size: 16px;
                         margin-top: 2rem;
                     }
                 }
@@ -97,7 +97,7 @@ $whblue: #076CFF;
             padding-right: 6rem;
             border: none;
             border-radius: 25px;
-            font-size: 1.75rem;
+            font-size: 16px;
             scale: 0.9;
             cursor: pointer;
             transition: all 0.5s ease;
@@ -164,7 +164,7 @@ $whblue: #076CFF;
                     width: 100%;
                     height: 100%;
                     padding: 1.5rem;
-                    font-size: 24px;
+                    font-size: 16px;
                 }
                 
             }
@@ -184,7 +184,7 @@ $whblue: #076CFF;
                     border-radius: 25px;
                     border: none;
                     width: 50%;
-                    font-size: 1.5rem;
+                    font-size: 16px;
                     cursor: pointer;
                     transition: all 0.5s ease;
 
@@ -240,4 +240,35 @@ svg{
         border: none;
         color: #EFF2F7;
     }
+}
+
+.rev-wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+    
+    padding: 0 20px; 
+}
+.revUl {
+    display: flex;
+    gap: 25px;
+    padding: 20px 0;
+    list-style: none;
+    scroll-padding: 0 75px;
 }
