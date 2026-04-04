@@ -1,5 +1,5 @@
 import logotype from '../../image/logoo.png';
-import  '../../styles/glav.css';
+import  '../../../styles/glav.css';
 function HeaderP(){
     return(
         <header className="header">
