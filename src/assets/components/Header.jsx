@@ -27,7 +27,7 @@ function Header(){
             <>
                 <div className='userProfile'>
                     <button className="profile-button">
-                        Зарегистрироватся/Войти
+                        Войти
                     </button>
                 </div>
             </>
