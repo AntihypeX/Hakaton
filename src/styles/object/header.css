@@ -30,7 +30,7 @@ header div button {
 }
 header div button p {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.75rem;
   margin: 0;
 }
 header .profile-button {

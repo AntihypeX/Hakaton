@@ -30,16 +30,36 @@ header div button {
 }
 header div button p {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.75rem;
   margin: 0;
 }
 header .profile-button {
   background-color: #FF6B35;
   margin: 0;
   padding: 2rem;
+<<<<<<< Updated upstream
   color: #2C3E50;
   border-radius: 50px;
   font-size: 20px;
+=======
+  padding-left: 6rem;
+  padding-right: 6rem;
+  color: #EFF2F7;
+  border-radius: 25px;
+  font-size: 20px;
+  scale: 0.9;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-size: 1.75rem;
+}
+header .profile-button:hover {
+  scale: 1;
+  background-color: #FF6B35;
+>>>>>>> Stashed changes
 }
 
 footer {
@@ -81,6 +101,103 @@ footer a img {
   font-size: 15px;
 }
 
+<<<<<<< Updated upstream
+=======
+.main-block {
+  background: linear-gradient(120deg, rgba(7, 108, 255, 0.75) 0%, rgba(255, 107, 53, 0.75) 100%), url(../assets/image/7dbff4604eeaf7a8edca4287cb773cda32bc018d.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin: 0;
+  color: #EFF2F7;
+}
+.main-block h1 {
+  margin: 0;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.main-block h2 {
+  margin: 0;
+  font-size: 1.75rem;
+  margin-bottom: 3rem;
+}
+.main-block button {
+  background-color: #EFF2F7;
+  height: 82px;
+  margin: 0;
+  padding: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.75rem;
+  scale: 0.9;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-block button:hover {
+  scale: 1;
+  background-color: #FF6B35;
+}
+
+.why-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  padding: 5rem;
+  margin: 0;
+}
+.why-block .why-description {
+  grid-area: 1/1/2/2;
+}
+.why-block .why-description h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.why-block .why-description h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.why-block .why-cards {
+  grid-area: 1/2/2/4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.why-block .why-cards .why-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  background-color: #4A6FA5;
+  padding: 1.5rem;
+}
+.why-block .why-cards .why-card h4 {
+  color: #EFF2F7;
+  margin: 0;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.why-block .why-cards .why-card p {
+  color: #EFF2F7;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+>>>>>>> Stashed changes
 body {
   margin: 0;
 }/*# sourceMappingURL=glav.css.map */
