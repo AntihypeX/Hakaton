@@ -3,57 +3,58 @@ header {
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  background-color: #1B283B;
+  background-color: #2C3E50;
   padding: 1rem;
   padding-left: 5rem;
   padding-right: 5rem;
   margin: 0;
 }
 header img {
-  height: 82px;
+  height: 50px;
 }
 header div {
   display: flex;
   align-content: center;
   align-items: center;
 }
-header div button {
-  background: none;
-  border: none;
-  color: inherit;
-  outline: none;
-  color: #EFF2F7;
+header div a {
+  cursor: pointer;
+  font-size: 1.75rem;
+  margin: 0;
+  transition: all 0.5s ease;
   padding: 0;
   margin: 0;
   margin-left: 1rem;
   margin-right: 1rem;
+  color: #EFF2F7;
+  text-decoration: none;
 }
-header div button p {
-  cursor: pointer;
-  font-size: 20px;
-  margin: 0;
-  transition: all 0.5s ease;
-}
-header div button p:hover {
+header div a:hover {
   scale: 1.1;
   color: #FF6B35;
 }
 header .profile-button {
   background-color: #4A6FA5;
+  border: none;
   margin: 0;
   padding: 2rem;
   padding-left: 6rem;
   padding-right: 6rem;
   color: #EFF2F7;
-  border-radius: 50px;
+  border-radius: 25px;
   font-size: 20px;
   scale: 0.9;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   transition: all 0.5s ease;
+  font-size: 1.75rem;
 }
 header .profile-button:hover {
   scale: 1;
-  background-color: #FF6B35;
+  background-color: #324b70;
 }
 
 footer {
@@ -61,21 +62,20 @@ footer {
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  align-items: flex-start;
-  background-color: #1B283B;
+  background-color: #2C3E50;
   padding: 1rem;
   padding-left: 5rem;
   padding-right: 5rem;
   margin: 0;
   color: #EFF2F7;
-  height: 20vh;
 }
 footer h4 {
   font-size: 15px;
   font-weight: normal;
+  margin-top: 0.5rem;
 }
 footer a img {
-  height: 82px;
+  height: 50px;
 }
 
 .right-side {
@@ -98,13 +98,16 @@ footer a img {
 }
 
 .main-block {
-  background: linear-gradient(120deg, rgb(7, 108, 255) 0%, rgb(255, 107, 53) 100%);
+  background: linear-gradient(120deg, rgba(7, 108, 255, 0.75) 0%, rgba(255, 107, 53, 0.75) 100%), url(../assets/image/7dbff4604eeaf7a8edca4287cb773cda32bc018d.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 60vh;
   margin: 0;
   color: #EFF2F7;
 }
@@ -115,7 +118,7 @@ footer a img {
 }
 .main-block h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 3rem;
 }
 .main-block button {
@@ -126,17 +129,307 @@ footer a img {
   padding-left: 6rem;
   padding-right: 6rem;
   border: none;
-  border-radius: 50px;
-  font-size: 20px;
+  border-radius: 25px;
+  font-size: 1.75rem;
   scale: 0.9;
   cursor: pointer;
   transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2C3E50;
 }
 .main-block button:hover {
   scale: 1;
   background-color: #FF6B35;
 }
 
+.why-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin: 0;
+}
+.why-block .why-description {
+  grid-area: 1/1/2/2;
+}
+.why-block .why-description h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #2C3E50;
+}
+.why-block .why-description h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #2C3E50;
+  font-weight: normal;
+}
+.why-block .why-cards {
+  grid-area: 1/2/2/4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.why-block .why-cards .why-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  background-color: #4A6FA5;
+  padding: 1.5rem;
+}
+.why-block .why-cards .why-card h4 {
+  color: #EFF2F7;
+  margin: 0;
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+.why-block .why-cards .why-card p {
+  color: #EFF2F7;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.review-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background: #4A6FA5;
+  background: linear-gradient(180deg, rgb(74, 111, 165) 0%, rgb(0, 0, 0) 100%);
+}
+.review-container h2 {
+  color: #EFF2F7;
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.review-container div {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.review-container div ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.review-container div ul li {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #EFF2F7;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 2rem;
+  border-radius: 25px;
+  width: 350px;
+  height: 350px;
+}
+.review-container div ul li .prof-pic {
+  align-items: center;
+  margin-bottom: 20px;
+}
+.review-container div ul li .prof-pic img {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+.review-container div ul li .prof-pic h4 {
+  color: #2C3E50;
+  padding: 0;
+  margin: 0;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+}
+.review-container div ul li .song-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 255px;
+  margin: 0;
+}
+.review-container div ul li .song-info p {
+  color: #2C3E50;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+}
+.review-container div ul li .song-info h5 {
+  color: #2C3E50;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+.review-container div .my-review-button {
+  background-color: #EFF2F7;
+  height: 82px;
+  margin: 0;
+  padding: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.75rem;
+  scale: 0.9;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2C3E50;
+}
+.review-container div .my-review-button:hover {
+  scale: 1;
+  background-color: #FF6B35;
+}
+
+.modal-review {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.modal-review div {
+  width: 50vw;
+  height: 50vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EFF2F7;
+  gap: 30px;
+  border-radius: 50px;
+}
+.modal-review div h2 {
+  color: #2C3E50;
+  font-weight: normal;
+  margin: 0;
+}
+.modal-review div form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.modal-review div form .textarea {
+  display: flex;
+  height: 100%;
+  padding-top: 0;
+  margin: 0;
+}
+.modal-review div form .textarea textarea {
+  background-color: #DEEAFE;
+  resize: none;
+  border-radius: 25px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+.modal-review div form .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+.modal-review div form .button button {
+  background-color: #DEEAFE;
+  padding: 2rem;
+  resize: none;
+  border-radius: 25px;
+  border: none;
+  width: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.modal-review div form .button button:hover {
+  scale: 1.05;
+  background-color: #FF6B35;
+}
+
+.question-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  height: auto;
+}
+.question-block h2 {
+  font-weight: normal;
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.question-block .question-box {
+  background-color: #1B283B;
+  padding: 2rem;
+  border-radius: 50px;
+}
+.question-block .question-box .question-item {
+  width: auto;
+  height: auto;
+  color: #EFF2F7;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #4A6FA5;
+  margin: 1rem;
+  border-radius: 25px;
+}
+.question-block .question-box .question-item svg {
+  width: 35px;
+  height: 35px;
+}
+.question-block .question-box .question-item p {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+.question-block .question-box .question-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 body {
   margin: 0;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=glav.css.map */

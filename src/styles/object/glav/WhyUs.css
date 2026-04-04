@@ -1,0 +1,53 @@
+.why-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin: 0;
+}
+.why-block .why-description {
+  grid-area: 1/1/2/2;
+}
+.why-block .why-description h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #2C3E50;
+}
+.why-block .why-description h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #2C3E50;
+  font-weight: normal;
+}
+.why-block .why-cards {
+  grid-area: 1/2/2/4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.why-block .why-cards .why-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  background-color: #4A6FA5;
+  padding: 1.5rem;
+}
+.why-block .why-cards .why-card h4 {
+  color: #EFF2F7;
+  margin: 0;
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+.why-block .why-cards .why-card p {
+  color: #EFF2F7;
+  margin: 0;
+  font-size: 1.1rem;
+}/*# sourceMappingURL=WhyUs.css.map */

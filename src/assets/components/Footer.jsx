@@ -1,4 +1,4 @@
-import logotype from '../image/logoo.png'
+import logotype from '../image/логотип 23 (1).png'
 //для класса footer-url: cursor: pointer; color: blue;
 const Year = new Date().getFullYear();
 function Footer(){

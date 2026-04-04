@@ -1,11 +1,14 @@
 .main-block {
-  background: linear-gradient(120deg, rgb(7, 108, 255) 0%, rgb(255, 107, 53) 100%);
+  background: linear-gradient(120deg, rgba(7, 108, 255, 0.75) 0%, rgba(255, 107, 53, 0.75) 100%), url(../assets/image/7dbff4604eeaf7a8edca4287cb773cda32bc018d.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 60vh;
   margin: 0;
   color: #EFF2F7;
 }
@@ -16,7 +19,7 @@
 }
 .main-block h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 3rem;
 }
 .main-block button {
@@ -27,11 +30,15 @@
   padding-left: 6rem;
   padding-right: 6rem;
   border: none;
-  border-radius: 50px;
-  font-size: 20px;
+  border-radius: 25px;
+  font-size: 1.75rem;
   scale: 0.9;
   cursor: pointer;
   transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2C3E50;
 }
 .main-block button:hover {
   scale: 1;
