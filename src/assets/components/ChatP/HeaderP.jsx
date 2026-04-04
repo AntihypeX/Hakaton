@@ -1,7 +1,7 @@
 import logotype from '../../image/logoo.png';
 import { useState } from "react";
 import  '../../../styles/glav.css';
-
+import ModalLogIn from '../ModalWindows/ModalLogIn.jsx';
 function HeaderP(){
     const [isModalOpen, setIsModalOpen] = useState(false);
     return(
@@ -17,7 +17,7 @@ function HeaderP(){
             <>
                 <div className='userProfile'>
                     <button className="profile-button">
-                        Зарегистрироваться/Войти
+                       Войти
                     </button>
                 </div>
             </>
