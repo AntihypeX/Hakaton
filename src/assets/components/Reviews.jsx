@@ -19,7 +19,7 @@ function ReviewsBlock({title}){
         <div className="review-container" id = 'section2'>
             <h2 className="review-title">{title}</h2>
             <div className="controls">
-                    <button onClick={scrollLeft} className='scroll-button-l '>
+                    <button onClick={scrollLeft} className='scroll-button-l'>
                         <FaChevronCircleLeft />
                     </button>
                     <button onClick={scrollRight} className='scroll-button-r'>
