@@ -6,12 +6,12 @@ function ReviewsBlock({title}){
     const scrollRef = useRef(null)
     const scrollLeft = () => {
         if (scrollRef.current) {
-            scrollRef.current.scrollBy({left: -350, behavior: 'smooth'})
+            scrollRef.current.scrollBy({left: -475, behavior: 'smooth'})
         }
     };
     const scrollRight = () => {
         if (scrollRef.current) {
-            scrollRef.current.scrollBy({left: 350, behavior: 'smooth'})
+            scrollRef.current.scrollBy({left: 475, behavior: 'smooth'})
         }
     }
     const [isModalOpen, setIsModalOpen] = useState(false);

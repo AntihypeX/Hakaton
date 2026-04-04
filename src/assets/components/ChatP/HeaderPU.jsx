@@ -1,4 +1,5 @@
 import logotype from '../../image/logoo.png';
+import { PersonCircle } from 'react-bootstrap-icons';
 import { useState } from "react";
 import  '../../../styles/glav.css';
 import ModalLogIn from '../ModalWindows/ModalLogIn.jsx';
@@ -16,8 +17,8 @@ function HeaderP(){
             </>
             <>
                 <div className='userProfile'>
-                    <button className="profile-button">
-                       Войти
+                    <button className="profile-button" onClick={() => setIsLoginOpen(true)}>
+                        <PersonCircle />
                     </button>
                 </div>
             </>
