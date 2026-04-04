@@ -2,7 +2,7 @@ import logotype from '../../image/logoo.png';
 import { PersonCircle } from 'react-bootstrap-icons';
 import  '../../../styles/glav.css';
 import ModalLogIn from '../ModalWindows/ModalLogIn.jsx';
-function HeaderP(){
+function HeaderPU(){
     return(
         <header className="header">
             <>
@@ -20,8 +20,10 @@ function HeaderP(){
                     </button>
                 </div>
             </>
-
+            <>
+                <ModalLogIn />
+            </>
         </header>
     )
 }
-export default HeaderP;
+export default HeaderPU;

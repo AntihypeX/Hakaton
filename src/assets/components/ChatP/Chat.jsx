@@ -25,6 +25,7 @@ function Chat() {
                     <div className="input">
                         <input type="text" name="message" id="message"></input>
                         <button type="submit">Отправить</button>
+                        
                     </div>
                 </div>
             </div>
