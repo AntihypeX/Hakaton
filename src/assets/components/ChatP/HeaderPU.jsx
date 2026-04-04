@@ -1,6 +1,5 @@
 import logotype from '../../image/logoo.png';
 import { PersonCircle } from 'react-bootstrap-icons';
-import { useState } from "react";
 import  '../../../styles/glav.css';
 import ModalLogIn from '../ModalWindows/ModalLogIn.jsx';
 function HeaderP(){
@@ -21,7 +20,7 @@ function HeaderP(){
                     </button>
                 </div>
             </>
-            
+
         </header>
     )
 }
