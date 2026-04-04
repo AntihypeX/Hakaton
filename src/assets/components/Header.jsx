@@ -1,7 +1,15 @@
 import logotype from '../image/logoo.png';
+import { useState } from "react";
 import  '../../styles/glav.css';
+import ModalLogIn from './ModalWindows/ModalLogIn.jsx';
+import ModalRegistr from './ModalWindows/ModalRegistration.jsx';
 function Header(){
-
+const [isLoginOpen, setIsLoginOpen] = useState(false);
+const [isRegOpen, setIsRegOpen] = useState(false);
+const openReg =() =>{
+    setIsLoginOpen(false);
+    setIsRegOpen(true);
+}
     return(
         <header className="header">
             <>
@@ -19,12 +27,21 @@ function Header(){
             </div>
             <>
                 <div className='userProfile'>
-                    <button className="profile-button">
+                    <button className="profile-button" onClick = {() => setIsLoginOpen(true)}>
                         Войти
                     </button>
                 </div>
             </>
+             <ModalLogIn
+                isOpen={isLoginOpen}
+                onClose={() => setIsLoginOpen(false)} 
+                onSwitch={openReg}/>
+
+            <ModalRegistr
+                isOpen={isRegOpen} 
+                onClose={() => setIsRegOpen(false)} />
         </header>
+        
     )
 }
 export default Header;

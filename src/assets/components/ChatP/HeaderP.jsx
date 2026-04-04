@@ -1,6 +1,9 @@
 import logotype from '../../image/logoo.png';
+import { useState } from "react";
 import  '../../../styles/glav.css';
+
 function HeaderP(){
+    const [isModalOpen, setIsModalOpen] = useState(false);
     return(
         <header className="header">
             <>
@@ -18,6 +21,9 @@ function HeaderP(){
                     </button>
                 </div>
             </>
+            <ModalLogIn
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)} />
         </header>
     )
 }
