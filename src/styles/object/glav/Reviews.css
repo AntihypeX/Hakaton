@@ -80,12 +80,12 @@
   background-color: #EFF2F7;
   height: 82px;
   margin: 0;
-  padding: 2rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding: 20px;
+  padding-left: 75px;
+  padding-right: 75px;
+  font-size: 24px;
   border: none;
   border-radius: 25px;
-  font-size: 16px;
   scale: 0.9;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -112,7 +112,7 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 .modal-review div {
-  width: 50vw;
+  width: 750px;
   height: 50vh;
   padding: 40px;
   display: flex;
@@ -137,18 +137,19 @@
 .modal-review div form .textarea {
   display: flex;
   height: 100%;
-  padding-top: 0;
-  margin: 0;
+  padding: 0;
+  margin: 20px;
+  margin-top: 0;
 }
 .modal-review div form .textarea textarea {
   background-color: #DEEAFE;
   resize: none;
   border-radius: 25px;
   border: none;
-  width: 100%;
-  height: 100%;
+  width: 690px;
+  height: 220px;
   padding: 1.5rem;
-  font-size: 16px;
+  font-size: 24px;
 }
 .modal-review div form .button {
   display: flex;
@@ -160,12 +161,14 @@
 }
 .modal-review div form .button button {
   background-color: #DEEAFE;
-  padding: 25px;
+  padding: 20px;
+  padding-left: 75px;
+  padding-right: 75px;
+  font-size: 24px;
   resize: none;
   border-radius: 25px;
   border: none;
   width: 50%;
-  font-size: 16px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
