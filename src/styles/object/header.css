@@ -3,7 +3,7 @@ header {
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  background-color: #2C3E50;
+  background-color: #1B283B;
   padding: 1rem;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -32,12 +32,26 @@ header div button p {
   cursor: pointer;
   font-size: 20px;
   margin: 0;
+  transition: all 0.5s ease;
+}
+header div button p:hover {
+  scale: 1.1;
+  color: #FF6B35;
 }
 header .profile-button {
-  background-color: #FF6B35;
+  background-color: #4A6FA5;
   margin: 0;
   padding: 2rem;
-  color: #2C3E50;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  color: #EFF2F7;
   border-radius: 50px;
   font-size: 20px;
+  scale: 0.9;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+header .profile-button:hover {
+  scale: 1;
+  background-color: #FF6B35;
 }/*# sourceMappingURL=header.css.map */

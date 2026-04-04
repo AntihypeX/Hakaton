@@ -2,8 +2,10 @@ $white: #ffffff;
 $dark: #0D0D0D;
 $blue: #4A6FA5;
 $orange: #FF6B35;
-$whblue: #EFF2F7;
+$whb: #EFF2F7;
 $drblue: #2C3E50;
+$drblue: #1B283B;
+$whblue: #076CFF;
 
 $transition-main: all 0.5s ease;
 $transition-speed: 0.5s;
@@ -13,7 +15,7 @@ header{
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  background-color: #2C3E50;
+  background-color: #1B283B;
   padding: 1rem;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -43,16 +45,32 @@ header{
           cursor: pointer;
           font-size: 20px;
           margin: 0;
+          transition: all 0.5s ease;
+
+            &:hover {
+              scale: 1.1;
+              color: #FF6B35;
+            }
         }
     }
   }
 
   .profile-button{
-    background-color: #FF6B35;
+    background-color: #4A6FA5;
     margin: 0;
     padding: 2rem;
-    color: #2C3E50;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    color: #EFF2F7;
     border-radius: 50px;
     font-size: 20px;
+    scale: 0.9;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      scale: 1;
+      background-color: #FF6B35;
+    }
   }
 }

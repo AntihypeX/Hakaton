@@ -1,0 +1,39 @@
+.main-block {
+  background: linear-gradient(120deg, rgb(7, 108, 255) 0%, rgb(255, 107, 53) 100%);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin: 0;
+  color: #EFF2F7;
+}
+.main-block h1 {
+  margin: 0;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.main-block h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.main-block button {
+  background-color: #EFF2F7;
+  height: 82px;
+  margin: 0;
+  padding: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  scale: 0.9;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.main-block button:hover {
+  scale: 1;
+  background-color: #FF6B35;
+}/*# sourceMappingURL=SloganBlock.css.map */
