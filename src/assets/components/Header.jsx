@@ -1,4 +1,5 @@
 import logotype from '../image/логотип 23 (1).png';
+import { PersonCircle } from 'react-bootstrap-icons';
 import { useState } from "react";
 import  '../../styles/glav.css';
 import ModalLogIn from './ModalWindows/ModalLogIn.jsx';
@@ -28,7 +29,7 @@ const openReg =() =>{
             <>
                 <div className='userProfile'>
                     <button className="profile-button" onClick = {() => setIsLoginOpen(true)}>
-                        Войти
+                        <PersonCircle />
                     </button>
                 </div>
             </>

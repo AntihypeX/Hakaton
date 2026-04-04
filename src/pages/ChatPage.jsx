@@ -1,4 +1,4 @@
-import HeaderP from '../assets/components/ChatP/HeaderP.jsx';
+import HeaderP from '../assets/components/ChatP/HeaderPU.jsx';
 import Footer from '../assets/components/Footer.jsx';
 import Chat from '../assets/components/ChatP/Chat.jsx';
 
