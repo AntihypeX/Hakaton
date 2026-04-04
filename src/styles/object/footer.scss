@@ -15,7 +15,7 @@ footer{
     align-content: center;
     align-items: center;
     justify-content: space-between;
-    background-color: #2C3E50;
+    background-color: #1B283B;
     padding: 1rem;
     padding-left: 200px;
     padding-right: 200px;
@@ -43,17 +43,39 @@ footer{
     div{
         display: flex;
         flex-direction: column;
-        margin-left: 2rem;
         text-align: left;
+        margin-left: 2rem;
+        gap: 10px;
 
-        h3{
+        .footer-text{
             margin: 0;
+            font-size: 16px;
+        }
+        .footer-oferta{
+            margin: 0;
+            width: 200px;
+        }
+        .footer-contacts{
+            margin: 0;
+            width: 200px;
         }
 
-        div{
-            margin: 0;
-            max-width: 200px;
-            font-size: 16px;
+        a{
+            transition: all 0.5s ease;
+            cursor: pointer;
+            &:hover{
+                color: #FF6B35;
+                scale: 1.1;
+            }
+        }
+
+        span{
+            transition: all 0.5s ease;
+            cursor: pointer;
+            &:hover{
+                color: #FF6B35;
+                scale: 1.1;
+            }
         }
     }
 }

@@ -15,10 +15,11 @@ $whblue: #076CFF;
     background-position: center;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 60vh;
+    padding-left: 200px;
+    padding-right: 200px;
     margin: 0;
     color: #EFF2F7;
     h1{
@@ -33,6 +34,7 @@ $whblue: #076CFF;
     }
     button{
         background-color: #EFF2F7;
+        width: auto;
         margin: 0;
         padding: 20px;
         padding-left: 75px;
