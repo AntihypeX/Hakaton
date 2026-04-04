@@ -1,0 +1,179 @@
+.userfon {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, rgb(7, 108, 255) 0%, rgb(255, 107, 53) 100%);
+}
+.userfon .userBlock {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: #1B283B;
+  width: 40vw;
+  padding: 40px;
+  border-radius: 50px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.userfon .userBlock h2 {
+  color: #EFF2F7;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.userfon .userBlock .user-settings {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.userfon .userBlock .user-settings .user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userfon .userBlock .user-settings .user-container .avatar-change {
+  color: #EFF2F7;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  width: 130px;
+}
+.userfon .userBlock .user-settings .user-container .avatar-change:hover {
+  scale: 1.05;
+  color: #FF6B35;
+}
+.userfon .userBlock .user-settings .user-container img {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+}
+.userfon .userBlock .user-settings .info-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFF2F7;
+  padding: 20px;
+  border-radius: 25px;
+  width: 100%;
+  gap: 15px;
+}
+.userfon .userBlock .user-settings .info-area .info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.userfon .userBlock .user-settings .info-area .info-row div span {
+  color: #2C3E50;
+  margin-right: 10px;
+}
+.userfon .userBlock .user-settings .info-area .info-row .edit-button {
+  background-color: #4A6FA5;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 25px;
+  scale: 1;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EFF2F7;
+}
+.userfon .userBlock .user-settings .info-area .info-row .edit-button:hover {
+  scale: 1.05;
+  background-color: #1B283B;
+}
+.userfon .userBlock .request-list {
+  width: 100%;
+  background-color: #4A6FA5;
+  border-radius: 25px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+.userfon .userBlock .request-list .request-item {
+  background-color: #EFF2F7;
+  width: 60%;
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 25px;
+  scale: 1;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  color: #2C3E50;
+}
+.userfon .userBlock .request-list .request-item:hover {
+  scale: 1.05;
+  background-color: #FF6B35;
+}
+.userfon .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.userfon .buttons .create-request-button {
+  background-color: #EFF2F7;
+  width: 100%;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 25px;
+  scale: 1;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2C3E50;
+}
+.userfon .buttons .create-request-button:hover {
+  scale: 1.05;
+  background-color: #FF6B35;
+}
+.userfon .buttons .logout-button {
+  background-color: #ff0000;
+  width: 100%;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 25px;
+  scale: 1;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2C3E50;
+}
+.userfon .buttons .logout-button:hover {
+  scale: 1.05;
+  background-color: #9b0d0d;
+}/*# sourceMappingURL=acaunt.css.map */
