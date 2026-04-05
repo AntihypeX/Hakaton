@@ -1,7 +1,6 @@
 function UserBlock(){
     const user = {
-            name: 'name',
-            email: 'Почта',
+            name: 'Cергей Иванов',
             avatar: "https://i.pravatar.cc/150?u=9",
             password: '123'
 
@@ -32,13 +31,6 @@ function UserBlock(){
                                 <div>
                                     <span className="info-label">Имя:</span>
                                     <span className="info-value">{user.name}</span>
-                                </div>
-                                <button className="edit-button">Изменить</button>
-                            </div>
-                            <div className="info-row">
-                                <div>
-                                    <span className="info-label">Почта:</span>
-                                    <span className="info-value">{user.email}</span>
                                 </div>
                                 <button className="edit-button">Изменить</button>
                             </div>
