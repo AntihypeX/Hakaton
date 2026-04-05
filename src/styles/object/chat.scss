@@ -61,12 +61,12 @@ $transition-main: all 0.5s ease;
       color: #EFF2F7;
 
       &.active {
-        background-color: #FF6B35;
+        background-color: #076CFF;
       }
 
       &:hover {
         transform: scale(1.05);
-        background-color: #719de0;
+        background-color: rgb(15, 56, 117);
       }
     }
   }

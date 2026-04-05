@@ -22,12 +22,15 @@ function Chat() {
                 
                 <div className="workspace">
                     <div className="messages">
-                        <div className="user-message">
-                            <p>Помоги с профессией</p>
-                        </div>
+
                         <div className="AI-message">
-                            <p>Конечно, перед этим ответьте на вопросы...</p>
+                            <p>Привет напиши мне "Помоги мне с работой броу"</p>
                         </div>
+
+                        <div className="user-message">
+                            <p>я хуесос безработный бедность</p>
+                        </div>
+
                     </div>
                     <div className="input">
                         <textarea name="message" id="message" className="message"></textarea>
