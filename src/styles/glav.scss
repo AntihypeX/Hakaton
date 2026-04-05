@@ -7,9 +7,26 @@
 @use '../styles/object/chat.scss';
 @use '../styles/object/acaunt.scss';
 
-
-body{
+html, body, #root {
+    height: 100vh;
     margin: 0;
+    padding: 0;
+}
+#root > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+header, footer {
+    flex-shrink: 0;
+}
+
+.container {
+    flex: 1; 
+    display: flex;
+    overflow: hidden;
 }
 
 html{
