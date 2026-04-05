@@ -1,4 +1,5 @@
 import { toast } from 'react-toastify';
+import '/api.js'
 function ModalLogIn({ isOpen, onClose, onSwitch, setIsAuth }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
