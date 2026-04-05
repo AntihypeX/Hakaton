@@ -1,35 +1,43 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import logotype from '../../image/логотип 23 (1).png';
 import { PersonCircle } from 'react-bootstrap-icons';
-import { useState, useEffect } from "react";
-import { Link, useNavigate } from 'react-router-dom';
-import '../../../styles/glav.css';
-function Header() {
-    const [isAuth, setIsAuth] = useState(false);
+import  '../../../styles/glav.css';
+import ModalLogIn from '../ModalWindows/ModalLogIn.jsx';
+import { useNavigate} from 'react-router-dom';
+import { useState } from 'react';
+function HeaderPU(){
     const navigate = useNavigate();
-    useEffect(() => {
+    const [ isLoginOpen, setIsLoginOpen ] = useState(false);
+    const handleProfileClick = () =>{
         const user = localStorage.getItem('user');
         if (user) {
-            setIsAuth(true);
+            navigate('/user');
+        }else{
+            setIsLoginOpen(true);
         }
-    }, []);
-    const handleProfileClick = () => {
-        if (isAuth) {
-            navigate('/user'); 
-        }
-    };
-    return (
+    }
+    return(
         <header className="header">
-            <Link to="/" className="logo-link">
-                <img src={logotype} alt="hakaton" className="logo-images" />
-            </Link>
-            <div className='userProfile'>
-                <button className="profile-button" onClick={handleProfileClick}>
-                    <PersonCircle />
-                </button>
-            </div>
+            <>
+                <a href="/" className="logo-link">
+                    <img src={logotype}
+                        alt="hakaton"
+                        className="logo-images"
+                    />
+                </a>
+            </>
+            <>
+                <div className='userProfile'>
+                    <button className="profile-button" onClick={handleProfileClick}>
+                       <PersonCircle />
+                    </button>
+                </div>
+            </>
+            <>
+                <ModalLogIn 
+                isOpen = {isLoginOpen}
+                onClose = {() => setIsLoginOpen(false)}/>
+            </>
         </header>
-    );
+    )
 }
-
-export default Header;
+export default HeaderPU;
