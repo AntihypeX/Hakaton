@@ -51,7 +51,8 @@ function Header() {
             />
             <ModalRegistr
                 isOpen={isRegOpen}
-                onClose={() => setIsRegOpen(false)} 
+                onClose={() => setIsRegOpen(false)}
+                setIsAuth={setIsAuth} 
             />
         </header>
     );
