@@ -20,6 +20,7 @@ $transition-main: all 0.5s ease;
     gap: 20px;
     padding-top: 20px;
     flex-shrink: 0;
+    overflow: hidden;
 
     h1 {
       color: #EFF2F7;
@@ -84,7 +85,6 @@ $transition-main: all 0.5s ease;
       padding: 20px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
       gap: 15px;
 
       &::-webkit-scrollbar {

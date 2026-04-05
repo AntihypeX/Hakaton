@@ -690,6 +690,7 @@ svg {
   gap: 20px;
   padding-top: 20px;
   flex-shrink: 0;
+  overflow: hidden;
 }
 .container .sidebar h1 {
   color: #EFF2F7;
@@ -747,7 +748,6 @@ svg {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   gap: 15px;
 }
 .container .workspace .messages::-webkit-scrollbar {
