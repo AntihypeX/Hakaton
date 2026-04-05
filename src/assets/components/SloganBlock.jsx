@@ -1,14 +1,20 @@
+import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 function SloganBlock(){
-    const toChatPage = useNavigate();
+    const navigate = useNavigate();
     const handleChat = () => {
-        toChatPage('/chat');
+        const user = localStorage.getItem('user');
+        if (user) {
+            navigate('/chat'); 
+        }else{
+            toast.error("Пожалуйста, войдите в аккаунт или зарегистрируйтесь!");
+        }
     }
     return(
         <main className="main-block">
             <h1 className="slogan">Твой успех — наш приоритет: построим трек мечты!</h1>
-            <h2 className="slogan-under">Мы поможем составить план, прокачать навыки и найти работу, которая вдохновляет</h2>
-            <button className="go-to-chath" onClick={handleChat}>Найти роботу</button>
+            <h2 className="slogan-under"> Помогаем составить план, прокачать навыки и найти работу</h2>
+            <button className="go-to-chath" onClick={handleChat}>Найти работу</button>
         </main>
     )
 }

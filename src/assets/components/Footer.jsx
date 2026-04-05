@@ -1,3 +1,4 @@
+import {toast} from 'react-toastify';
 import logotype from '../image/логотип 23 (1).png'
 const Year = new Date().getFullYear();
 function Footer(){
@@ -5,7 +6,7 @@ function Footer(){
         const copy = e.target.innerText;
         navigator.clipboard.writeText(copy)
         .then(() => {
-            alert('Скопировано в буфер обмена.');
+            toast.success('Скопировано в буфер обмена.');
         }).catch(err => {
             console.log(err);
         });

@@ -1,8 +1,20 @@
-import logotype from '../../image/logoo.png';
+import logotype from '../../image/логотип 23 (1).png';
 import { PersonCircle } from 'react-bootstrap-icons';
 import  '../../../styles/glav.css';
 import ModalLogIn from '../ModalWindows/ModalLogIn.jsx';
+import { useNavigate} from 'react-router-dom';
+import { useState } from 'react';
 function HeaderPU(){
+    const navigate = useNavigate();
+    const [ isLoginOpen, setIsLoginOpen ] = useState(false);
+    const handleProfileClick = () =>{
+        const user = localStorage.getItem('user');
+        if (user) {
+            navigate('/user');
+        }else{
+            setIsLoginOpen(true);
+        }
+    }
     return(
         <header className="header">
             <>
@@ -15,13 +27,15 @@ function HeaderPU(){
             </>
             <>
                 <div className='userProfile'>
-                    <button className="profile-button">
+                    <button className="profile-button" onClick={handleProfileClick}>
                        <PersonCircle />
                     </button>
                 </div>
             </>
             <>
-                <ModalLogIn />
+                <ModalLogIn 
+                isOpen = {isLoginOpen}
+                onClose = {() => setIsLoginOpen(false)}/>
             </>
         </header>
     )

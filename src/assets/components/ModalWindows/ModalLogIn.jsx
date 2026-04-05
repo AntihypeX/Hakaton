@@ -1,16 +1,14 @@
+import {toast} from 'react-toastify';
 function ModalLogIn({ isOpen, onClose, onSwitch, setIsAuth }) {
     const handleSubmit = (e) => {
         e.preventDefault();
-        // 1. Сохраняем данные
         localStorage.setItem('user', 'true');
-        // 2. Обновляем статус авторизации в хедере
         if (setIsAuth) { 
             setIsAuth(true); 
         }
-        // 3. Закрываем модалку ПОСЛЕ входа
+        toast.success('Вы успешно вошли!');
         onClose(); 
     };
-    // Если модалка закрыта — ничего не рисуем
     if (!isOpen) return null;
     return (
         <div className="modal-login-container" onClick={onClose}>

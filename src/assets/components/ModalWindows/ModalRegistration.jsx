@@ -1,22 +1,48 @@
-function ModalRegistr({isOpen, onClose}){ 
-    if(!isOpen) return null;
-    return(
-        <div className="modal-registr-container" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-registr-container-items">
-                <div className="modal-registr-title">
-                    <h2>Регистрация</h2>
+import { toast } from 'react-toastify';
+function ModalLogIn({ isOpen, onClose, onSwitch, setIsAuth }) {
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.currentTarget);
+        try {
+            await window.api.login({
+                login: formData.get('login'),
+                password: formData.get('password'),
+            });
+            localStorage.setItem('user', 'true');
+
+            if (setIsAuth) {
+                setIsAuth(true);
+            }
+            toast.success('Вы успешно вошли!');
+            onClose();
+        } catch (error) {
+            toast.error(error.message || 'Не удалось войти.');
+        }
+    };
+    if (!isOpen) return null;
+    return (
+        <div className="modal-login-container" onClick={onClose}>
+            <div className="modal-login-container-items" onClick={(e) => e.stopPropagation()}>
+                <div className="modal-login-title">
+                    <h2>Авторизация</h2>
                 </div>
-                <div className="modal-regisre-form">
-                    <form className="registr-form" method="post">
-                        <input type="email" placeholder="Почта" id="email" name="email"/>
-                        <input type="password" placeholder="Пароль" id="password" name="password"/>
-                        <input type="password" placeholder="Повторите пароль" id="password2" name="password2"/>
-                        <button type="submit" className="btn-log">Зарегистрироваться</button>
+                <div className="modal-login-form">
+                    <form className="login-form" onSubmit={handleSubmit}>
+                        <input type="text" placeholder="Логин" id="login" name="login" required />
+                        <input type="password" placeholder="Пароль" id="password" name="password" required />
+                        <button type="submit" id="login-button" className="btn-log">
+                            Войти
+                        </button>
+                        <p>Нет аккаунта?</p>
+                        <span onClick={onSwitch} style={{ cursor: 'pointer', color: 'blue' }}>
+                            Зарегистрируйтесь
+                        </span>
                     </form>
                 </div>
                 <button onClick={onClose} className="close-btn-log">Закрыть</button>
             </div>
         </div>
-    )
+    );
 }
-export default ModalRegistr;
+
+export default ModalLogIn;
