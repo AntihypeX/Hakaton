@@ -16,13 +16,14 @@ header{
   align-items: center;
   justify-content: space-between;
   background-color: #1B283B;
-  padding: 1rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 200px;
   padding-right: 200px;
   margin: 0;
 
   img{
-    height: 50px;
+    height: 40px;
   }
 
   div{
@@ -53,13 +54,13 @@ header{
     background-color: #4A6FA5;
     border: none;
     margin: 0;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 75px;
     padding-right: 75px;
     color: #EFF2F7;
     border-radius: 25px;
     scale: 0.9;
-    height: 82px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,7 +251,8 @@ header{
                 resize: none;
                 border-radius: 25px;
                 border: none;
-                padding: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 padding-left: 75px;
                 padding-right: 75px;
                 font-size: 24px;
