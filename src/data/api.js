@@ -362,3 +362,4 @@ if (typeof document !== 'undefined') {
 if (typeof window !== 'undefined') {
     window.api = api;
 }
+export default api;

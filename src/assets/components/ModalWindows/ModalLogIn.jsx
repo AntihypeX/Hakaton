@@ -1,16 +1,35 @@
 import {toast} from 'react-toastify';
-import '/api.js'
+import api from '../../../data/api.js'
 function ModalLogIn({ isOpen, onClose, onSwitch, setIsAuth }) {
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        localStorage.setItem('user', 'true');
-        if (setIsAuth) { 
-            setIsAuth(true); 
-        }
-        toast.success('Вы успешно вошли!');
-        onClose(); 
-    };
     if (!isOpen) return null;
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(e.currentTarget);
+        const login = formData.get('login');
+        const password = formData.get('password');
+
+        try {
+            // Вызываем метод из твоего api.js
+            await api.login(login, password);
+            
+            localStorage.setItem('user', 'true');
+            if (setIsAuth) setIsAuth(true);
+            
+            toast.success('Вы успешно вошли!');
+            onClose(); 
+        } catch (error) {
+            // Твой api.js пробрасывает ошибки с message
+            toast.error(error.message || 'Ошибка авторизации');
+        }
+    };
+    const handleSwitch = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (onSwitch) {
+        onSwitch(); 
+    }
+};
     return (
         <div className="modal-login-container" onClick={onClose}>
             <div className="modal-login-container-items" onClick={(e) => e.stopPropagation()}>
@@ -25,7 +44,7 @@ function ModalLogIn({ isOpen, onClose, onSwitch, setIsAuth }) {
                             Войти
                         </button>
                         <p>Нет аккаунта?</p> 
-                        <span onClick={onSwitch} style={{ cursor: 'pointer', color: 'blue' }}>
+                        <span onClick={handleSwitch} style={{ cursor: 'pointer', color: 'blue' }}>
                             Зарегистрируйтесь
                         </span>
                     </form>

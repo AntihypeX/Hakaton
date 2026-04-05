@@ -1,25 +1,25 @@
 import { toast } from 'react-toastify';
-import '/api.js'
-function ModalLogIn({ isOpen, onClose, onSwitch, setIsAuth }) {
+import api from '../../../data/api.js'
+function ModalRegistr({ isOpen, onClose, onSwitch, setIsAuth }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const formData = new FormData(e.currentTarget);
-        try {
-            await window.api.login({
-                login: formData.get('login'),
-                password: formData.get('password'),
-            });
-            localStorage.setItem('user', 'true');
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+        await api.register({
+            login: formData.get('login'), 
+            password: formData.get('password'),
+            password2: formData.get('password2')
+        });
 
-            if (setIsAuth) {
-                setIsAuth(true);
-            }
-            toast.success('Вы успешно вошли!');
-            onClose();
-        } catch (error) {
-            toast.error(error.message || 'Не удалось войти.');
-        }
-    };
+        localStorage.setItem('user', 'true');
+        toast.success("Регистрация успешна!");
+        if (setIsAuth) setIsAuth(true);
+        onClose();
+    } catch (error) {
+        toast.error(error.message);
+    }
+};
     if (!isOpen) return null;
     return (
         <div className="modal-login-container" onClick={onClose}>
@@ -46,4 +46,4 @@ function ModalLogIn({ isOpen, onClose, onSwitch, setIsAuth }) {
     );
 }
 
-export default ModalLogIn;
+export default ModalRegistr;
