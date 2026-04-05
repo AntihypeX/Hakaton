@@ -1,4 +1,4 @@
-const API_BASE_URL = typeof window !== 'undefined' ? getApiBaseUrl() : '';
+const API_BASE_URL = 'https://vbldki.ru/api';
 
 const API_ROUTES = {
     auth: {
@@ -6,6 +6,12 @@ const API_ROUTES = {
         me: '/auth/me.php',
         logout: '/auth/logout.php',
         register: '/auth/register.php',
+    },
+    chats: {
+        list: '/chats/list.php',
+        create: '/chats/create.php',
+        messages: '/chats/messages.php',
+        send: '/chats/send.php',
     },
     forms: {
         register: '/register_forms.php',
@@ -19,17 +25,21 @@ async function request(path, options = {}) {
     let response;
 
     try {
+        const headers = {
+            'Accept': 'application/json',
+            ...options.headers,
+        };
+
+        if (options.body) {
+            headers['Content-Type'] = 'text/plain;charset=UTF-8';
+        }
+
         response = await fetch(`${API_BASE_URL}${path}`, {
             method: options.method || 'GET',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-                ...options.headers,
-            },
+            headers,
             credentials: 'include',
             body: options.body ? JSON.stringify(options.body) : undefined,
         });
-    // eslint-disable-next-line no-unused-vars
     } catch (error) {
         throw new Error(`Не удалось подключиться к API: ${API_BASE_URL}${path}`);
     }
@@ -115,20 +125,6 @@ function normalizeLoginPayload(...args) {
     };
 }
 
-function getApiBaseUrl() {
-    const { origin, hostname, pathname } = window.location;
-
-    if (hostname === 'front.localhost') {
-        return 'http://api.localhost/api';
-    }
-
-    if (hostname === 'localhost' && pathname.includes('/hakaton/')) {
-        return `${origin}/hakaton/BackEnd/api`;
-    }
-
-    return `${origin}/api`;
-}
-
 const api = {
     login(...args) {
         const payload = normalizeLoginPayload(...args);
@@ -140,7 +136,12 @@ const api = {
     },
 
     me() {
-        return request(API_ROUTES.auth.me);
+        const currentPath = typeof window !== 'undefined' ? window.location.pathname : '/';
+        const params = new URLSearchParams({
+            path: currentPath,
+        });
+
+        return request(`${API_ROUTES.auth.me}?${params.toString()}`);
     },
 
     logout() {
@@ -162,6 +163,36 @@ const api = {
         return request(API_ROUTES.forms.register, {
             method: 'POST',
             body: { message },
+        });
+    },
+
+    listChats() {
+        return request(API_ROUTES.chats.list);
+    },
+
+    createChat(number = 0) {
+        return request(API_ROUTES.chats.create, {
+            method: 'POST',
+            body: { number },
+        });
+    },
+
+    getChatMessages(chatId) {
+        const params = new URLSearchParams({
+            chatId: String(chatId ?? ''),
+        });
+
+        return request(`${API_ROUTES.chats.messages}?${params.toString()}`);
+    },
+
+    sendChatMessage(chatId, message, number = 0) {
+        return request(API_ROUTES.chats.send, {
+            method: 'POST',
+            body: {
+                chatId,
+                message,
+                number,
+            },
         });
     },
 
@@ -362,4 +393,5 @@ if (typeof document !== 'undefined') {
 if (typeof window !== 'undefined') {
     window.api = api;
 }
+
 export default api;

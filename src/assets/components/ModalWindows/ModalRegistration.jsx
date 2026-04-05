@@ -1,7 +1,7 @@
-import {toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 import api from '../../../data/api.js';
-function ModalRegistr({isOpen, onClose, setIsAuth}){ 
-    if(!isOpen) return null;
+function ModalRegistr({ isOpen, onClose, setIsAuth }) {
+    if (!isOpen) return null;
     const handleRegister = async (e) => {
         e.preventDefault();
 
@@ -14,7 +14,7 @@ function ModalRegistr({isOpen, onClose, setIsAuth}){
             await api.register(login, password, password2);
             localStorage.setItem('user', 'true');
             toast.success("Вы успешно зарегистрировались!");
-            
+
             if (setIsAuth) setIsAuth(true);
             onClose();
         } catch (error) {
@@ -30,22 +30,22 @@ function ModalRegistr({isOpen, onClose, setIsAuth}){
                 </div>
                 <div className="modal-regisre-form">
                     <form className="registr-form" onSubmit={handleRegister}>
-                        <input 
-                            type="text" 
-                            placeholder="Логин" 
-                            name="login" 
+                        <input
+                            type="text"
+                            placeholder="Логин"
+                            name="login"
                             required
                         />
-                        <input 
-                            type="password" 
-                            placeholder="Пароль" 
-                            name="password" 
+                        <input
+                            type="password"
+                            placeholder="Пароль"
+                            name="password"
                             required
                         />
-                        <input 
-                            type="password" 
-                            placeholder="Повторите пароль" 
-                            name="password2"  
+                        <input
+                            type="password"
+                            placeholder="Повторите пароль"
+                            name="password2"
                             required
                         />
                         <button type="submit" className="btn-log">Зарегистрироваться</button>

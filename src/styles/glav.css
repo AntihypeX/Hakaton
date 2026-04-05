@@ -4,13 +4,14 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #1B283B;
-  padding: 1rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 200px;
   padding-right: 200px;
   margin: 0;
 }
 header img {
-  height: 50px;
+  height: 40px;
 }
 header div {
   display: flex;
@@ -37,13 +38,13 @@ header .profile-button {
   background-color: #4A6FA5;
   border: none;
   margin: 0;
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 75px;
   padding-right: 75px;
   color: #EFF2F7;
   border-radius: 25px;
   scale: 0.9;
-  height: 82px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,7 +218,8 @@ header .profile-button:hover {
   resize: none;
   border-radius: 25px;
   border: none;
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 75px;
   padding-right: 75px;
   font-size: 24px;
@@ -235,7 +237,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   background-color: #1B283B;
-  padding: 1rem;
+  padding: 20px;
   padding-left: 200px;
   padding-right: 200px;
   margin: 0;
@@ -244,22 +246,22 @@ footer {
 footer h4 {
   font-size: 20px;
   font-weight: normal;
-  margin-top: 0.5rem;
+  margin: 0;
+  margin-top: 20px;
 }
 footer a img {
-  height: 50px;
+  height: 30px;
 }
 
 .right-side {
   display: flex;
-  max-width: 400px;
 }
 .right-side div {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 2rem;
   gap: 10px;
+  margin-left: 40px;
 }
 .right-side div .footer-text {
   margin: 0;
@@ -267,11 +269,11 @@ footer a img {
 }
 .right-side div .footer-oferta {
   margin: 0;
-  width: 200px;
+  width: auto;
 }
 .right-side div .footer-contacts {
   margin: 0;
-  width: 200px;
+  width: auto;
 }
 .right-side div a {
   transition: all 0.5s ease;
@@ -690,6 +692,7 @@ svg {
   gap: 20px;
   padding-top: 20px;
   flex-shrink: 0;
+  overflow: hidden;
 }
 .container .sidebar h1 {
   color: #EFF2F7;
@@ -747,7 +750,6 @@ svg {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   gap: 15px;
 }
 .container .workspace .messages::-webkit-scrollbar {
